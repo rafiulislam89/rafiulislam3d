@@ -53,8 +53,8 @@ const Navbar = () => {
           }}
         >
           <p className='text-white text-[26px] lg:text-[36px] font-bold pointer-events-auto cursor-pointer flex'>
-            FK
-          </p>
+            RI
+          </p> 
         </Link>
 
         <ul className='list-none hidden sm:flex flex-col gap-5'>
