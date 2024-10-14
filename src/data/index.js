@@ -76,7 +76,7 @@ const portfolio = [
   {
     name: "Discover the Details",
     description:
-    "As salamualaikum, This is my another portfolio. where I’ve put together a collection of my projects, skills, and experiences built with HTML, CSS, and JavaScript. Here, you’ll find not only my work but also my CV, giving you a deeper understanding of who I am and what I love doing. If you’re curious to know more about me and see how I approach web development, take a moment to explore. To dive in, visit: http://rafiulislam.rf.gd.",
+    "As salamualaikum,This is my another portfolio.In Here, you’ll find not only my work but also my CV, giving you a deeper understanding of who I am and what I love doing. take a moment to explore. To dive in, visit: http://rafiulislam.rf.gd",
     image: devnotes,
     link: "http://rafiulislam.rf.gd",
   },
