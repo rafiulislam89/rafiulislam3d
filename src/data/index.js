@@ -14,7 +14,7 @@ export const navLinks = [
     title: "Portfolio",
   },
   {
-    id: "Education & experience",
+    id: "education & experience",
     title: "Education and Experience",
   },
   {
@@ -76,7 +76,7 @@ const portfolio = [
   {
     name: "Discover the Details",
     description:
-    "As salamualaikum,This is my another portfolio.In Here, you’ll find not only my work but also my CV, giving you a deeper understanding of who I am and what I love doing. take a moment to explore. To dive in, visit: http://rafiulislam.rf.gd",
+    "As salamualaikum,This is my another portfolio.In Here, you’ll find not only my work but also my CV, giving you understanding of who I am and what I love doing. take a moment to explore. To dive in, visit: http://rafiulislam.rf.gd",
     image: devnotes,
     link: "http://rafiulislam.rf.gd",
   },
