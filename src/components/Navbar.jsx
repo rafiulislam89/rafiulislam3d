@@ -57,18 +57,16 @@ const Navbar = () => {
           </p> 
         </Link>
 {/* i edited here */}
-      <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+     <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
   {navLinks.map((nav) => (
     <li
       key={nav.id}
       className={`font-poppins font-medium cursor-pointer text-[16px] ${
         active === nav.id ? "text-quaternary" : "text-secondary"
       }`}
-      onClick={(e) => {
-        e.preventDefault();
+      onClick={() => {
+        setToggle(!toggle);
         setActive(nav.id);
-        setToggle(false);
-        document.getElementById(nav.id)?.scrollIntoView({ behavior: "smooth" });
       }}
     >
       <a href={`#${nav.id}`}>{nav.title}</a>
