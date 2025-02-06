@@ -56,23 +56,26 @@ const Navbar = () => {
             RI
           </p> 
         </Link>
+{/* i edited here */}
+      <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+  {navLinks.map((nav) => (
+    <li
+      key={nav.id}
+      className={`font-poppins font-medium cursor-pointer text-[16px] ${
+        active === nav.id ? "text-quaternary" : "text-secondary"
+      }`}
+      onClick={(e) => {
+        e.preventDefault();
+        setActive(nav.id);
+        setToggle(false);
+        document.getElementById(nav.id)?.scrollIntoView({ behavior: "smooth" });
+      }}
+    >
+      <a href={`#${nav.id}`}>{nav.title}</a>
+    </li>
+  ))}
+</ul>
 
-        <ul className='list-none hidden sm:flex flex-col gap-5'>
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`relative flex items-center ${
-                active === nav.id ? "text-white" : "text-slate-500"
-              } hover:text-white text-[18px] lg:text-[24px] font-bold pointer-events-auto cursor-pointer`}
-              onClick={() => setActive(nav.id)}
-            >
-              {active === nav.id && (
-                <div className="fixed right-10 w-2 h-6 lg:h-8 bg-quaternary"></div>
-              )}
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
-          ))}
-        </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
